@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>to do application</title>
     <style>
-      * {
-        font-size: 20px;
-        font-family: sans-serif;
-      }
       body {
         margin: 0px;
         padding: 0px;
@@ -23,7 +19,7 @@
       .container {
         background-color: #4f959d;
         padding: 20px;
-        position:fixed;
+        position: fixed;
         bottom: 0;
         left: 0;
         right: 0;
@@ -54,6 +50,8 @@
         margin: 0 auto;
         width: 50%;
         margin-top: 10px;
+        font-size: 20px;
+        font-family: sans-serif;
       }
       .delete-task {
         height: 50px;
@@ -70,6 +68,17 @@
         bottom: 5px;
         top: 5px;
         left: 50%;
+      }
+      @media (max-width: 700px) {
+        .task-card {
+          color: red;
+          font-size: 15px;
+          width: 80%;
+        }
+        .priority-image img {
+          height: 50px;
+          width: 50px;
+        }
       }
     </style>
   </head>
